@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.test.cs210asgn3.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/loanAmountBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Loan Amount"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/annualInterestRateBox"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Annual Interest Rate"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanAmountBox" />
+
+    <Button
+        android:id="@+id/buttonPress"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#128968"
+        android:text="Show Monthly Payments"
+        android:textColor="#fff"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/annualInterestRateBox" />
+
+    <TextView
+        android:id="@+id/fiveYearPayment"
+        android:layout_width="306dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Show 5 Year Monthly Payments"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPress" />
+
+    <TextView
+        android:id="@+id/tenYearPayment"
+        android:layout_width="312dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:text="Show 10 Year Monthly Payments"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiveYearPayment" />
+
+    <TextView
+        android:id="@+id/fifteenYearPayment"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Show 15 Year Monthly Payments"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenYearPayment" />
+</android.support.constraint.ConstraintLayout>
